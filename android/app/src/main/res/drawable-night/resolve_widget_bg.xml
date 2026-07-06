@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widget surface, DARK theme: the dial's glass fill, a soft emerald radial
+     glow, centered slightly high, fading to AMOLED black. Borderless. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="28dp" />
+    <gradient
+        android:type="radial"
+        android:centerX="0.5"
+        android:centerY="0.42"
+        android:gradientRadius="72%p"
+        android:startColor="#0F3527"
+        android:centerColor="#08201A"
+        android:endColor="#050706" />
+</shape>

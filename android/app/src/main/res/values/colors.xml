@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#000000</color>
+
+    <!-- Widget, LIGHT system theme (dark ink on a soft neutral surface). -->
+    <color name="widget_ink">#0C1512</color>
+    <color name="widget_muted">#6D7C74</color>
+    <color name="widget_accent">#0E9E70</color>
+</resources>

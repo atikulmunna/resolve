@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget, DARK system theme (light ink on AMOLED). -->
+    <color name="widget_ink">#EAFFF6</color>
+    <color name="widget_muted">#8FA79D</color>
+    <color name="widget_accent">#34D399</color>
+</resources>
