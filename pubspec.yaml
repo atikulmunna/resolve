@@ -1,0 +1,59 @@
+name: resolve
+description: "Resolve: single-habit streak timer"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # Offline-only local persistence (FR-7.2). Models serialize to JSON.
+  shared_preferences: ^2.3.0
+  # Milestone notifications (Tier-1). Local-only; timezone for zoned scheduling.
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  # Native Android home-screen widget (Tier-1): Flutter ⇄ AppWidget bridge.
+  home_widget: ^0.7.0
+  # Backup export/import (Tier-3): share the JSON out, pick a file back in.
+  share_plus: ^10.1.1
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+# App launcher icon. Regenerate with:  dart run flutter_launcher_icons
+# The generated mipmaps are committed, so every build ships this icon.
+flutter_launcher_icons:
+  android: true
+  ios: false
+  # Legacy (pre-API-26) square icon, the full-bleed design.
+  image_path: "assets/app-icon-1024.png"
+  min_sdk_android: 21
+  # Adaptive icon (API 26+): AMOLED-black background + the full design as the
+  # foreground. flutter_launcher_icons applies a 16% safe-zone inset itself, so
+  # the ring lands at ~54% of the icon, clear of any launcher mask.
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/app-icon-1024.png"
+
+flutter:
+  uses-material-design: true
+
+  # Bundled offline. Oswald & Space Grotesk ship as variable fonts;
+  # exact weights are applied at the call site via FontVariation('wght', …)
+  # so a single file covers every weight we use.
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald.ttf
+    - family: SpaceGrotesk
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk.ttf
