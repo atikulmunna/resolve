@@ -5,6 +5,7 @@
 ### A single-habit streak timer for Android. Quit one bad habit, and watch every second you stay clean.
 
 [![Download APK](https://img.shields.io/badge/⬇_Download-APK_v1.0.0-34d399?style=for-the-badge&logo=android&logoColor=white)](https://github.com/atikulmunna/resolve/releases/download/v1.0.0/resolve-v1.0.0.apk)
+[![Also on Uptodown](https://img.shields.io/badge/Also_on-Uptodown-3DB5FF?style=for-the-badge&logo=uptodown&logoColor=white)](https://resolve.en.uptodown.com/android)
 
 </div>
 
